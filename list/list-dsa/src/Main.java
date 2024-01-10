@@ -124,5 +124,25 @@ public class Main {
         System.out.println(arrStr.indexOf("ebcubnrb"));
 
 
+        List<Integer> visited = new ArrayList<>();
+        Integer arr2[] = {2,2,2,2};
+
+        for (int i = 0; i < arr2.length; i++) {
+            if (!visited.contains(arr2[i])) {
+                int count = 1;
+                for (int j = i + 1; j < arr2.length; j++) {
+                    if (arr2[i] == arr2[j]) {
+                        count++;
+                    }
+                }
+                visited.add(arr2[i]);
+                System.out.println("Integer repeated is: " + arr2[i] + " and count is " + count);
+                //visited.add(arr2[i]);
+            }
+
+        }
+        System.out.println("problem done");
+
+
     }
 }
