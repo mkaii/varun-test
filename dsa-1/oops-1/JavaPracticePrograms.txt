@@ -1,0 +1,30 @@
+1. Find a specific word in string and reverse it
+
+2. There is a paragraph and find out the word having largest length
+
+3. Reverse alternate words in a string 
+
+
+4. Find duplicate words from string
+ex:
+I/p: test automation is good to have test skill
+O/p: test
+
+5. Find duplicate characters from a word
+i/p: automation
+o/p= a t o
+
+6. Find the words having repeating characters in a string .
+For Ex: I/P: I live in india where calcutta is a metropolitan city.
+        O/P: india where calcutta metropolitan
+
+7.Find out the groups of two numbers having sum of 20 with in a given array.
+arr[] = {4,15,10,12,20,0,5,8}
+
+8. Find out the possible groups having largest sum of two numbers in a given array
+arr[] ={10,10,45,56,78,80}
+
+
+
+
+
