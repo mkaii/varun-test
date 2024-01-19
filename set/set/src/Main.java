@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -77,8 +78,71 @@ public class Main {
 
         System.out.println(s2.size());
 
+        // read : there is no concept of index or keys in set u can only check if a certain value is there or not
 
-        
+        //Set<Integer> s3 = Set.of(1,2,3,4,5,6);
+
+        Set<Integer> s3 = new HashSet<>();
+        s3.add(1);
+        s3.add(2);
+        s3.add(3);
+        s3.add(4);
+
+
+
+        System.out.println(s3);
+
+        boolean state =  s3.contains(61);
+
+        System.out.println(state);
+
+        //update
+            //remove 6
+            // add 8
+
+        // iterate on each element of the set
+
+        for(Integer x : s3)
+        {
+            System.out.println(x + " ");
+        }
+
+        // check if the hashset is empty or not
+
+        s3.clear();
+
+        System.out.println(s3);
+
+        System.out.println(s3.isEmpty());
+
+
+        List<Integer> numbers = new ArrayList<>(List.of(1,1,1,1,1,1,2,2,2,2,2,3,3,3,3));
+
+        List<Integer> output  = new ArrayList<>();
+
+        Set<Integer> visited = new HashSet<>();
+
+
+        for(Integer num : numbers)
+        {
+            if(visited.contains(num))
+            {
+                continue;
+            }
+            else {
+                output.add(num);
+                visited.add(num);
+            }
+        }
+
+
+        System.out.println(output);
+
+
+
+
+
+
 
 
 
