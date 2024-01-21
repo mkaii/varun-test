@@ -61,7 +61,7 @@ public class Main {
             {
                 if(valueToIndexMap.get(value)!= i) {
                     System.out.println(arr[i] + " " + value);
-                    valueToIndexMap.remove(arr[i]);
+                    valueToIndexMap.remove(arr[i]); // this was removed to avoid over counting of pairs
                 }
             }
 
