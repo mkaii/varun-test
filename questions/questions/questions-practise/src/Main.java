@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,6 +28,8 @@ public class Main {
         System.out.println("------------------------------------------");
 
         //second approach
+        // time complexity o(n)
+        //space complexity o(n)
 
         /*for(int i=0;i<arr.length;i++)
         {
@@ -65,6 +68,41 @@ public class Main {
                 }
             }
 
+        }
+
+        System.out.println("#####-- 3 rd approach --##");
+        // space 0 , time : nlogn
+
+        // sort the array
+
+        Arrays.sort(arr); // nlogn
+
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+
+
+        int left = 0, right  = arr.length-1;
+
+        while(left<right)
+        {
+            if(arr[left] + arr[right] > 20)
+            {
+                right--;
+            }
+            else if (arr[left] + arr[right] < 20)
+            {
+                left++;
+            }
+            else {
+                // sum is 20
+
+                System.out.println(arr[left] + " " + arr[right]);
+                left++;
+                right--;
+
+            }
         }
 
 
